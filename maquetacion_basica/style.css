@@ -1,0 +1,101 @@
+*{
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 7px solid gray;
+  width: 20%;
+  margin: auto;
+
+}
+
+header {
+  display: flex;
+  border: 2px double lime;
+  height: 5vh;
+  width: 98.5%;
+  margin: auto;
+}
+
+.nav{
+  display: flex;
+  border: 2px double purple;
+  height: 5vh;
+  width: 98.5%;
+  margin: auto;
+}
+
+.mitad {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.article{
+  display: flex;
+  border: 2px double blue;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-start;
+  padding: 3px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  border: 2px double lime;
+  width: 92%;
+  margin-bottom: 20%;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  border: 2px double purple;
+  padding: 7px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border: 2px double yellow;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: auto;
+  border: 2px double orange;
+  padding: 3px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  border: 2px double cyan;
+  width: auto;
+  align-items: center;
+  padding: 3px;
+  padding-bottom: 4.8em;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 94.5%;
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  padding: 6px;
+  border: 2px double yellow;
+}
+
+
