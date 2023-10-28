@@ -1,6 +1,7 @@
 *{
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 2px;
 }
 
 
@@ -33,6 +34,7 @@ header {
 .mitad {
   display: flex;
   flex-direction: row;
+  gap: 2px;
   width: 100%;
 }
 
@@ -83,7 +85,7 @@ header {
   width: auto;
   align-items: center;
   padding: 3px;
-  padding-bottom: 4.8em;
+  padding-bottom: 4.94em;
 
 }
 
