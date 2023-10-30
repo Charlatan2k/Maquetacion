@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="equipo-navbar" class="navbar">
+    <div id="equipo-navbar-items" class="navbar-items">
+      <a href="../index.html">
+        <img src="../fotos/Codenotch-navbar.png" alt="Logo Codenotch para Navbar">
+      </a>
+      <div class="menu-item">
+        <a href="">Cursos <i class="bi bi-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="../pages/curso_full.html">Bootcamp de desarollo Web y Móvil </a>
+          <a href="">Bootcamp de Data Analytics</a>
+        </div>
+      </div>
+      <a href="./equipo.html">Nuestro Equipo <i class="bi bi-chevron-down"></i></a>
+      <a href="#">Contrata talento</a>
+      <a href="#">Aplica</a>
+    </div>
+  </div>
+
+
+  <div class="container-equipo">
+
+    <div class="section">
+    <div class="equipo">
+      <img src="../fotos/estefi.png" alt="">
+        <img src="../fotos/menchu.png" alt="">
+        <img src="../fotos/jose.png" alt="">
+      </div>
+      <div class="texto-miembros">
+        
+        <div class="estefi">
+          <h3>Instructor</h3>
+          <h1>Estefanía Cueva</h1>
+        </div>
+
+        
+        <div class="menchu">
+          <h3>Instructor</h3>
+          <h1>Carmen Martín</h1>
+        </div>
+        
+        
+        <div class="jose">
+          <h3>Director docente</h3>
+          <h1>José Herrera</h1>
+        </div>
+      </div>
+      </div>
+
+      <div class="equipo2">
+        <img src="../fotos/dani.png" alt="">
+          <img src="../fotos/jorge.png" alt="">
+          <img src="../fotos/ruben.png" alt="">
+        </div>
+
+        <div class="texto-miembros2">
+        <div class="dani">
+          <h3>Instructor</h3>
+          <h1>Daniel Vera</h1>
+        </div>
+
+        
+        <div class="jorge">
+          <h3>Instructor</h3>
+          <h1>Jorge Rodríguez</h1>
+        </div>
+        
+        
+        <div class="ruben">
+          <h3>Director docente</h3>
+          <h1>Rubén Rivas</h1>
+        </div>
+      </div>
+    
+  </div>
+</body>
+</html>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+
+  // Function to add or remove the "sticky" class based on scroll position
+  function toggleNavbarSticky() {
+    if (window.scrollY < 10) {
+      navbar.classList.remove('sticky');
+    } else {
+      navbar.classList.add('sticky');
+    }
+  }
+
+  // Event listener to check scroll position and apply the "sticky" class
+  window.addEventListener('scroll', toggleNavbarSticky);
+
+  // Initial check in case the page starts scrolled
+  toggleNavbarSticky();
+</script>

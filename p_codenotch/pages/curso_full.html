@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <title>Curso Full Stack Web y Móvil</title>
 </head>
 <body>
@@ -70,7 +71,69 @@
     </div>
     <img src="../fotos/foto-remoto.png" alt="Imagen en curso remoto">
     </div>
+
+
+
+    <div class="separar">
+      <img src="../fotos/Codenotch-navbar.png" alt="">
+    </div>
+
+
+    <h1 id="Titulo-convocatorias">Próximas convocatorias</h1>
+
+    <div class="convocatoria">
+
+
+      <div class="convocatorias">
+        <div class="ft-pr">
+          <p><b>FULL TIME</b> | PRESENCIAL</p>
+          <h1>29 de Enero</h1>
+          <span id="precios-becas">PRECIO FINAL 6900€</span>
+
+          <button>Más información</button>
+
+        </div>
+      
+        <div class="ft-rm">
+          <p><strong>FULL TIME</strong> | REMOTO</p>
+          <h1>29 de Enero</h1>
+          <span id="precios-becas">PRECIO FINAL 6900€</span>
+
+          <button>Más información</button>
+        </div>
+      
+        <div class="pt-rm">
+          <p><b>PART TIME</b>| REMOTO </p>
+          <h1>29 de Enero</h1>
+          <span id="precios-becas">PRECIO FINAL 6900€</span>
+
+          <button>Más información</button>
+
+        </div>
+      </div>
+      
+    </div>
+
   </div>
   
 </body>
 </html>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+
+  // Function to add or remove the "sticky" class based on scroll position
+  function toggleNavbarSticky() {
+    if (window.scrollY < 10) {
+      navbar.classList.remove('sticky');
+    } else {
+      navbar.classList.add('sticky');
+    }
+  }
+
+  // Event listener to check scroll position and apply the "sticky" class
+  window.addEventListener('scroll', toggleNavbarSticky);
+
+  // Initial check in case the page starts scrolled
+  toggleNavbarSticky();
+</script>

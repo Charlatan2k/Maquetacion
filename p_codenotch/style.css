@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 
+
 span {
   color: #11f294;
 }
@@ -15,7 +16,7 @@ span {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 800px;
 }
 
 
@@ -33,6 +34,7 @@ span {
   order: 0;
   margin-top: 2em;
   transition: color 0.3s;
+  z-index: 100;
 }
 
 
@@ -146,7 +148,7 @@ span {
   display: flex;
   flex-direction: column;
   background-color: black;
-  height: 900px;
+  height: 1000px;
 }
 
 .container2 img {
@@ -351,4 +353,181 @@ span {
   justify-content: center;
   align-self: center;
 
+}
+
+
+
+#Titulo-convocatorias {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 7em;
+
+}
+
+.convocatorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+
+}
+
+.ft-pr, .ft-rm, .pt-rm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid blue;
+  width: 22%;
+  height: 20em;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-pr p, .ft-rm p, .pt-rm p{
+  display: flex;
+  font-size: smaller;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.ft-pr h1, .ft-rm h1, .pt-rm h1{
+  margin-bottom: 1em;
+}
+
+.ft-pr span, .ft-rm span, .pt-rm span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  color: white;
+  font-weight: bold;
+  background-color: #0000ee;
+  height: 4em;
+  width: 85%;
+}
+
+.ft-pr button, .ft-rm button, .pt-rm button {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 2px;
+  color: white;
+  height: 15%;
+  width: 45%;
+}
+
+.ft-pr button:hover, .ft-rm button:hover, .pt-rm button:hover{
+  cursor: pointer;
+  opacity: 50%;
+  transition: opacity 0.2s;
+} 
+
+
+
+/* CSS página equipo */
+
+#equipo-navbar {
+  background-color: black;
+  margin: 0;
+  height: 5em;
+}
+
+#equipo-navbar-items {
+  margin-right: 15em;
+}
+
+#equipo-navbar-items a{
+  color: white;
+}
+
+
+.container-equipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70em;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 100%;
+}
+
+.equipo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.equipo img {
+  margin-left: 80px;
+  width: 20%;
+}
+
+.equipo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.equipo2 img {
+  margin-left: 80px;
+  margin-top: 10em;
+  width: 20%;
+}
+
+.texto-miembros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-top: 5em;
+  margin-right: 2em;
+}
+
+.texto-miembros2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin-top: 2em;
+  margin-left: 6em;
+
+}
+
+.texto-miembros2 h1 {
+  color: black;
+  margin-right: 7em;
+}
+
+.texto-miembros h1{
+  color: black;
+  margin-right: 5em;
+}
+
+.jose {
+  width: 20%;
+  margin-right: 3em;
+}
+
+.menchu {
+  width: 20%;
+  margin-right: 7em;
+}
+
+.estefi {
+  width: 20%;
 }
