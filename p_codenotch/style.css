@@ -1,0 +1,354 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+}
+
+span {
+  color: #11f294;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(https://www.codenotch.com/wp-content/uploads/2021/09/Web-portada-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+
+
+/* CSS primer apartado página principal */
+/* Define the default styles for your navbar */
+.navbar {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin-right: 14em;
+  font-size: small;
+  order: 0;
+  margin-top: 2em;
+  transition: color 0.3s;
+}
+
+
+.navbar.sticky {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin-right: 4em;
+  top: 0;
+  background-color: black; 
+  z-index: 100;
+  position: sticky;
+  width: 100%;
+  height: 10%;
+  transition: background-color 0.3s;
+
+}
+
+.navbar.sticky a{
+  margin-right: 4em;
+}
+
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  margin-right: 4em;
+}
+
+.navbar-items img {
+  margin-right: 8em;
+  transform: scale(0.8);
+}
+
+.navbar-items a{
+  text-decoration: none;
+  color: #a6a6ff;
+  font-weight: bold;
+}
+
+.navbar-items a:hover {
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px;
+  z-index: 1;
+  
+}
+
+.dropdown-menu a {
+  display: block;
+  margin-bottom: 20px; 
+}
+
+
+
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  
+  
+  
+}
+
+.navbar .menu-item {
+  position: relative;
+}
+
+
+
+.texto-principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15%;
+  margin-left: 5%;
+  color: white;
+  width: 40%;
+}
+
+.texto-principal p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.texto-principal h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+/* CSS de segunda parte de página principal */
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 900px;
+}
+
+.container2 img {
+  width: 80%;
+}
+
+.alumnos-trb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3em;
+  color: white;
+}
+
+.texto-formacion{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.texto-formacion h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 4em;
+  font-size: 40px;
+  margin-bottom: 2em;
+}
+
+.texto-formacion h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 8.1em;
+  font-size: 20px;
+}
+
+.texto-formacion p {
+  display: flex;
+  margin-left: 10em;
+  margin-top: 2em;
+  width: 40%;
+  font-weight: 550;
+}
+
+.apartado-juntos {
+  display: flex;
+  flex-direction: row;
+}
+
+.apartado-juntos img{
+  width: 100%;
+}
+
+/* Css Página curso Full stack */
+
+.container-fullstack {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 5px;
+  background-image: url(https://www.codenotch.com/wp-content/uploads/2021/05/bootcamp-desarrollo-web-y-movil.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.texto-entrada {
+  margin-top: 3em;
+  color: white;
+}
+
+.texto-entrada h1 {
+  margin: 2em 0em 0em 5em;
+}
+
+.texto-entrada h3 {
+  margin: 2em 0em 0em 8.7em;
+}
+
+.texto-entrada p {
+  margin: 2em 0em 0em 10.9em;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.texto-entrada button {
+  margin: 2em 0em 0em 10.8em;
+  background-color: #0000ee;
+  border: 2px solid #0000ee;
+  width: 15%;
+  height: 20%;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.texto-entrada button:hover{
+  cursor: pointer;
+}
+
+.texto-entrada button:active{
+  opacity: 40%;
+}
+
+
+.full-time {
+  display: flex;
+  flex-direction: row;
+}
+
+.texto-fulltime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+  margin-left: 4%;
+  text-decoration: underline;
+
+}
+
+.texto-fulltime h1{
+  margin-left: 0;
+  color: #272d3a;
+}
+
+.texto-fulltime h2 {
+  font-size: 15px;
+}
+
+.texto-fulltime h1, .texto-fulltime h2, .texto-fulltime p{
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+.texto-fulltime p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.full-time img{
+  margin-top: 2%;
+  margin-right: 0;
+  margin-left: 10%;
+  width: 41%;
+}
+
+.remoto {
+  display: flex;
+  flex-direction: row;
+}
+
+.texto-remoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+  margin-right: 14%;
+  text-decoration: underline;
+}
+
+.texto-remoto h1{
+  margin-right: 0;
+  color: #272d3a;
+}
+
+.texto-remoto h2 {
+  font-size: 15px;
+}
+
+.texto-remoto h1, .texto-remoto h2, .texto-remoto p{
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+.texto-remoto p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remoto img {
+  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 7%;
+  width: 41%;
+}
+
+.separar {
+  display: flex;
+  background-color: black;
+  height: 150px;
+  margin-top: 2%;
+  border: 1px solid #0000ee;
+}
+
+.separar img{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+}
