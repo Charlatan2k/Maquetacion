@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Contacto</title>
+</head>
+<body>
+
+  <div class="container-contacto">
+  <div class="navbar">
+    <div class="navbar-items">
+      <a href="../index.html">
+        <img src="../fotos/Codenotch-navbar.png" alt="Logo Codenotch para Navbar">
+      </a>
+      <div class="menu-item">
+        <a href="#">Cursos <i class="bi bi-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="../pages/curso_full.html">Bootcamp de desarollo Web y Móvil </a>
+          <a href="">Bootcamp de Data Analytics</a>
+        </div>
+      </div>
+      <a href="../pages/equipo.html">Nuestro Equipo <i class="bi bi-chevron-down"></i></a>
+      <a href="#">Contrata talento</a>
+      <a href="#">Aplica</a>
+    </div>
+  </div>
+
+  <div class="formulario">
+  <div class="campos-formulario">
+    <input id="nombre" type="text" placeholder="Nombre">
+    <input id="email" type="text" placeholder="Email">
+    <img src="../fotos/Codenotch-navbar.png" alt="">
+  </div>
+
+  <input id="mensaje" type="text" placeholder="Mensaje">
+
+
+</div>
+</div>
+</body>
+</html>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+
+  // Function to add or remove the "sticky" class based on scroll position
+  function toggleNavbarSticky() {
+    if (window.scrollY < 10) {
+      navbar.classList.remove('sticky');
+    } else {
+      navbar.classList.add('sticky');
+    }
+  }
+
+  // Event listener to check scroll position and apply the "sticky" class
+  window.addEventListener('scroll', toggleNavbarSticky);
+
+  // Initial check in case the page starts scrolled
+  toggleNavbarSticky();
+</script>

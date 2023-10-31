@@ -206,6 +206,37 @@ span {
   width: 100%;
 }
 
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background-image: url(https://codenotch.com/wp-content/uploads/2021/06/duotone-12@2x-600x167.png);
+  color: white;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  margin-right: 11em;
+  align-items: center;
+  width: 40%;
+  height: 10%;
+  font-size: 40px;
+}
+
+.texto-footer {
+  display: flex;
+  margin-top: 2em;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /* Css Página curso Full stack */
 
 .container-fullstack {
@@ -358,9 +389,10 @@ span {
 
 
 #Titulo-convocatorias {
+  display: flex;
+  justify-content: center;
   margin-top: 2em;
   margin-bottom: 2em;
-  margin-left: 7em;
 
 }
 
@@ -368,7 +400,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0;
+  margin-bottom: 30px;
 
 }
 
@@ -530,4 +562,63 @@ span {
 
 .estefi {
   width: 20%;
+}
+
+
+/* CSS de contacto */
+
+
+.container-contacto{
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://www.codenotch.com/wp-content/uploads/2021/09/Web-portada-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 100%;
+  
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  width: 70%;
+  height: 420px;
+  background-color: black;
+  border: 3px solid #0000ee;
+}
+
+.campos-formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.campos-formulario img{
+  margin-bottom: 20px;
+}
+
+
+#nombre {
+  display: flex;
+  
+}
+
+#mensaje{
+  display: flex;
+  height: 300px;
+  line-height: 200px;
+}
+
+input {
+  margin: 5px;
+  border: 2px solid #0000ee;
+  color: #0000ee;
+  border-radius: 3px;
+  height: 40px;
+
 }
