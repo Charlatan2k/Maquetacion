@@ -499,11 +499,11 @@ footer {
 .equipo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+
 }
 
 .equipo img {
-  margin-left: 80px;
+  margin-left: 70px;
   width: 20%;
 }
 
@@ -526,7 +526,7 @@ footer {
   align-items: center;
   height: 20px;
   margin-top: 5em;
-  margin-right: 2em;
+  margin-left: 15vh;
 }
 
 .texto-miembros2 {

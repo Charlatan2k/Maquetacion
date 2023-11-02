@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Viajes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-items">
+          <a id="navbar-inicio" href="./index.html">Inicio</a>
+          <a href="./pages/viajes.html">Viajes</a>
+          <a href="">¿Quien somos?</a>
+          <a href="./pages/contacto.html">Contacto</a>
+          <h1>Quien no quiere unas vacaciones?</h1>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="contenido-1">
+          <div class="apartado-1">
+            <h1>Bienvenido a una nueva vida de viajes de lujo asegurados</h1>
+            <p>
+              En nuestra agencia de viajes de lujo en jets privados, hemos hecho
+              de la excelencia y la sofisticación nuestra firma distintiva. Con
+              una pasión por la aventura y un enfoque meticuloso en cada
+              detalle, ofrecemos a nuestros distinguidos clientes una
+              experiencia de viaje que va más allá de lo convencional. Nuestros
+              jets privados, equipados con comodidades de primera clase, son el
+              portal a un mundo de posibilidades. Desde la majestuosidad de los
+              destinos más exóticos hasta la agitación de las metrópolis más
+              emocionantes, nuestros viajes se adaptan a sus deseos y
+              preferencias. En cada viaje, la satisfacción de nuestros clientes
+              es la prioridad número uno. Nuestro equipo altamente calificado se
+              encarga de todos los aspectos de su viaje, desde la planificación
+              hasta la culminación. Le ofrecemos la libertad de viajar a su
+              propio ritmo, explorar a su antojo y disfrutar de la privacidad y
+              el lujo que solo un jet privado puede ofrecer.
+            </p>
+          </div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./fotos/jet1.jpg" alt="Image 1" />
+            </div>
+            <div class="mySlides fade">
+              <img src="./fotos/jet2.jpg" alt="Image 2" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./fotos/jet3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const images = document.querySelectorAll(".mySlides img");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block"; //
+    setTimeout(function () {
+      images[slideIndex - 1].style.opacity = 1;
+    }, 10);
+
+    setTimeout(function () {
+      images[slideIndex - 1].style.opacity = 0;
+      showSlides();
+    }, 10000);
+  }
+</script>

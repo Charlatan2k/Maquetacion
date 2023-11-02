@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="container-contacto">
+      <div class="navbar">
+        <div class="navbar-items">
+          <a id="navbar-inicio" href="../index.html">Inicio</a>
+          <a href="">Viajes</a>
+          <a href="">¿Quien somos?</a>
+          <a href="">Contacto</a>
+          <h1>Quien no quiere unas vacaciones?</h1>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <div class="form-items">
+          <form id="myForm" action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre-form" />
+              </li>
+              <li>
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen-form" />
+              </li>
+              <li>
+                <label for="destino">Destino:</label>
+                <input type="text" name="" id="destino-form" />
+              </li>
+              <li>
+                <label for="num_personas">Número de personas</label>
+                <input type="number" name="n_per" id="num_p-form" />
+              </li>
+              <li>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha-form" />
+              </li>
+              <li>
+                <button type="submit" id="submitButton">
+                  Solicitar información
+                </button>
+                <button type="button" id="filtrarButton">Filtrar</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+
+        <div class="resultado-filtrado"></div>
+        <script src="../js/agencia.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
