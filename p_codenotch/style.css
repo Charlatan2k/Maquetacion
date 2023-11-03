@@ -1,8 +1,7 @@
-*{
+* {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0 auto;
 }
-
 
 span {
   color: #11f294;
@@ -19,13 +18,11 @@ span {
   height: 800px;
 }
 
-
-
 /* CSS primer apartado página principal */
 /* Define the default styles for your navbar */
 .navbar {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5em;
@@ -37,7 +34,6 @@ span {
   z-index: 100;
 }
 
-
 .navbar.sticky {
   display: flex;
   flex-direction: row;
@@ -46,19 +42,17 @@ span {
   gap: 5em;
   margin-right: 4em;
   top: 0;
-  background-color: black; 
+  background-color: black;
   z-index: 100;
   position: sticky;
   width: 100%;
   height: 10%;
   transition: background-color 0.3s;
-
 }
 
-.navbar.sticky a{
+.navbar.sticky a {
   margin-right: 4em;
 }
-
 
 .navbar-items {
   display: flex;
@@ -74,7 +68,7 @@ span {
   transform: scale(0.8);
 }
 
-.navbar-items a{
+.navbar-items a {
   text-decoration: none;
   color: #a6a6ff;
   font-weight: bold;
@@ -84,7 +78,6 @@ span {
   color: white;
   transition: ease-in-out 0.2s;
 }
-
 
 .dropdown-menu {
   display: none;
@@ -96,32 +89,23 @@ span {
   border: 1px solid black;
   padding: 10px;
   z-index: 1;
-  
 }
 
 .dropdown-menu a {
   display: block;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
-
-
-
 
 .menu-item:hover .dropdown-menu {
   display: block;
   opacity: 1;
-  
-  
-  
 }
 
 .navbar .menu-item {
   position: relative;
 }
 
-
-
-.texto-principal{
+.texto-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,14 +121,14 @@ span {
   font-weight: bold;
 }
 
-.texto-principal h1{
+.texto-principal h1 {
   font-size: 50px;
   font-weight: bolder;
 }
 
 /* CSS de segunda parte de página principal */
 
-.container2{
+.container2 {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -155,7 +139,7 @@ span {
   width: 80%;
 }
 
-.alumnos-trb{
+.alumnos-trb {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +150,7 @@ span {
   color: white;
 }
 
-.texto-formacion{
+.texto-formacion {
   display: flex;
   flex-direction: column;
   color: white;
@@ -202,20 +186,20 @@ span {
   flex-direction: row;
 }
 
-.apartado-juntos img{
+.apartado-juntos img {
   width: 100%;
 }
-
 
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 150px;
   background-image: url(https://codenotch.com/wp-content/uploads/2021/06/duotone-12@2x-600x167.png);
   color: white;
 }
 
-.redes{
+.redes {
   display: flex;
   flex-direction: row;
   margin-top: 1em;
@@ -281,14 +265,13 @@ footer {
   font-size: 15px;
 }
 
-.texto-entrada button:hover{
+.texto-entrada button:hover {
   cursor: pointer;
 }
 
-.texto-entrada button:active{
+.texto-entrada button:active {
   opacity: 40%;
 }
-
 
 .full-time {
   display: flex;
@@ -302,10 +285,9 @@ footer {
   margin-top: 2em;
   margin-left: 4%;
   text-decoration: underline;
-
 }
 
-.texto-fulltime h1{
+.texto-fulltime h1 {
   margin-left: 0;
   color: #272d3a;
 }
@@ -314,7 +296,9 @@ footer {
   font-size: 15px;
 }
 
-.texto-fulltime h1, .texto-fulltime h2, .texto-fulltime p{
+.texto-fulltime h1,
+.texto-fulltime h2,
+.texto-fulltime p {
   margin-bottom: 1em;
   margin-left: 0;
 }
@@ -324,7 +308,7 @@ footer {
   font-weight: bold;
 }
 
-.full-time img{
+.full-time img {
   margin-top: 2%;
   margin-right: 0;
   margin-left: 10%;
@@ -345,7 +329,7 @@ footer {
   text-decoration: underline;
 }
 
-.texto-remoto h1{
+.texto-remoto h1 {
   margin-right: 0;
   color: #272d3a;
 }
@@ -354,7 +338,9 @@ footer {
   font-size: 15px;
 }
 
-.texto-remoto h1, .texto-remoto h2, .texto-remoto p{
+.texto-remoto h1,
+.texto-remoto h2,
+.texto-remoto p {
   margin-bottom: 1em;
   margin-left: 0;
 }
@@ -379,21 +365,17 @@ footer {
   border: 1px solid #0000ee;
 }
 
-.separar img{
+.separar img {
   display: flex;
   justify-content: center;
   align-self: center;
-
 }
-
-
 
 #Titulo-convocatorias {
   display: flex;
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 2em;
-
 }
 
 .convocatorias {
@@ -401,10 +383,11 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 30px;
-
 }
 
-.ft-pr, .ft-rm, .pt-rm {
+.ft-pr,
+.ft-rm,
+.pt-rm {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -415,7 +398,9 @@ footer {
   align-items: center;
 }
 
-.ft-pr p, .ft-rm p, .pt-rm p{
+.ft-pr p,
+.ft-rm p,
+.pt-rm p {
   display: flex;
   font-size: smaller;
   position: absolute;
@@ -425,11 +410,15 @@ footer {
   margin-top: 20px;
 }
 
-.ft-pr h1, .ft-rm h1, .pt-rm h1{
+.ft-pr h1,
+.ft-rm h1,
+.pt-rm h1 {
   margin-bottom: 1em;
 }
 
-.ft-pr span, .ft-rm span, .pt-rm span{
+.ft-pr span,
+.ft-rm span,
+.pt-rm span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,7 +430,9 @@ footer {
   width: 85%;
 }
 
-.ft-pr button, .ft-rm button, .pt-rm button {
+.ft-pr button,
+.ft-rm button,
+.pt-rm button {
   background-color: black;
   border: 2px solid black;
   border-radius: 2px;
@@ -450,13 +441,13 @@ footer {
   width: 45%;
 }
 
-.ft-pr button:hover, .ft-rm button:hover, .pt-rm button:hover{
+.ft-pr button:hover,
+.ft-rm button:hover,
+.pt-rm button:hover {
   cursor: pointer;
   opacity: 50%;
   transition: opacity 0.2s;
-} 
-
-
+}
 
 /* CSS página equipo */
 
@@ -470,10 +461,9 @@ footer {
   margin-right: 15em;
 }
 
-#equipo-navbar-items a{
+#equipo-navbar-items a {
   color: white;
 }
-
 
 .container-equipo {
   display: flex;
@@ -499,7 +489,6 @@ footer {
 .equipo {
   display: flex;
   flex-direction: row;
-
 }
 
 .equipo img {
@@ -537,7 +526,6 @@ footer {
   width: 100%;
   margin-top: 2em;
   margin-left: 6em;
-
 }
 
 .texto-miembros2 h1 {
@@ -545,7 +533,7 @@ footer {
   margin-right: 7em;
 }
 
-.texto-miembros h1{
+.texto-miembros h1 {
   color: black;
   margin-right: 5em;
 }
@@ -564,11 +552,9 @@ footer {
   width: 20%;
 }
 
-
 /* CSS de contacto */
 
-
-.container-contacto{
+.container-contacto {
   display: flex;
   flex-direction: column;
   background-image: url(https://www.codenotch.com/wp-content/uploads/2021/09/Web-portada-3.png);
@@ -577,7 +563,6 @@ footer {
   background-repeat: no-repeat;
   height: 900px;
   width: 100%;
-  
 }
 
 .formulario {
@@ -598,17 +583,15 @@ footer {
   margin-top: 3em;
 }
 
-.campos-formulario img{
+.campos-formulario img {
   margin-bottom: 20px;
 }
 
-
 #nombre {
   display: flex;
-  
 }
 
-#mensaje{
+#mensaje {
   display: flex;
   height: 300px;
   line-height: 200px;
@@ -620,5 +603,4 @@ input {
   color: #0000ee;
   border-radius: 3px;
   height: 40px;
-
 }
