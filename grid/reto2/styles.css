@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100vh;
+}
+body {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: 40%;
+  width: 30%;
+  text-align: center;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: 40%;
+  width: 30%;
+  text-align: center;
+}
+
+.a,
+.c,
+.e {
+  background-color: #9efe4c;
+}
+
+.b,
+.d,
+.f {
+  background-color: black;
+  color: white;
+}

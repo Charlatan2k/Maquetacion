@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  height: 9%;
+  background-color: #020a10;
+  color: white;
+}
+
+.footer {
+  border: 2px solid red;
+}
+
+.container-pr {
+  display: grid;
+  grid-template-columns: [left0] 1fr [middle0] 1fr [middle1] 1fr [middle2] 1fr [right0];
+  grid-template-rows: [top1] 1fr [r-middle0] 1fr [bottom0] 1fr [bottom1];
+  background-color: #0031ed;
+  height: 80%;
+}
+
+.contenido-texto {
+  grid-column: left0 / middle2;
+  grid-row: top1 / r-middle0;
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.contenido-texto p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+.t1 {
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  grid-column: left0 / middle1;
+  grid-row: r-middle0 / bottom1;
+}
+
+.t1 p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.t2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  grid-column: middle1 / middle2;
+  grid-row: r-middle0 / bottom1;
+}
+
+.t2 p {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.container-2 {
+  display: grid;
+  height: 300%;
+  margin: 0px 0px 0px 10px;
+  place-items: center;
+  grid-template-columns: [middle0] 1fr;
+  grid-template-rows: [row0] 1fr [row1] 1fr [row2] 1fr [row3] 1fr [row4];
+  background-color: #00d29f;
+}
+
+.menu-pr {
+  border: 2px solid black;
+  grid-column: middle0;
+  grid-row: row0 / row1;
+  font-size: 40px;
+}
+
+.menu1 {
+  border: 2px solid black;
+  grid-column: middle0;
+  grid-row: row1 / row2;
+}
+
+.menu2 {
+  border: 2px solid black;
+  grid-column: middle0;
+  grid-row: row2 / row3;
+}
+
+.menu3 {
+  border: 2px solid black;
+  grid-column: middle0;
+  grid-row: row3 / row4;
+}
+
+.menu-pr,
+.menu1,
+.menu2,
+.menu3 {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  height: 90%;
+  color: white;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+  background-color: black;
+  font-size: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: [left0] 1fr [middle0] 1fr [right0];
+  background-color: #621dc0;
+  height: 10%;
+}
+
+.footer {
+  grid-column: left0 / middle0;
+}
+
+.contacto {
+  grid-column: middle0 / right0;
+}
+
+.footer,
+.contacto {
+  display: grid;
+  place-items: center;
+  border: 2px solid black;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+}
