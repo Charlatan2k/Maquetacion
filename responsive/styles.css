@@ -209,3 +209,25 @@ main {
   display: flex;
   justify-content: center;
 }
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  text-decoration: none;
+  color: #808080;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 25px;
+  gap: 2vw;
+  color: #808080;
+}
+
+.final p {
+  cursor: pointer;
+}
