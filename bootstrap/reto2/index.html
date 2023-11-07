@@ -19,9 +19,8 @@
     <title>Tienda ropa</title>
   </head>
   <body class="h-100">
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar mb-5 navbar-expand-lg bg-black">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +35,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                style="margin-right: 90vw"
+                >Home</a
+              >
             </li>
 
             <a
@@ -46,50 +50,17 @@
               style="
                 cursor: pointer;
                 text-decoration: none;
-                color: gray;
+                color: white;
+                border: 2px solid white;
+                background-color: black;
                 display: flex;
-                justify-content: center;
+                width: 100%;
+                justify-content: flex-end;
                 align-items: center;
               "
               >Carrito</a
             >
-
-            <li class="nav-item"></li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true"></a>
-            </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -98,6 +69,7 @@
       id="ex1"
       class="modal"
       style="
+        display: none;
         justify-content: center;
         align-items: center;
         width: 80rem;
@@ -105,13 +77,25 @@
       "
     >
       <p>Bienvenido al carrito de compra</p>
-      <p id="totalSum">Suma total: 0.00€</p>
+      <p
+        id="totalSum"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 30%;
+        "
+      >
+        Suma total: 0.00€
+      </p>
       <a href="#" id="close-carrito" rel="modal:close">Close</a>
     </div>
     <div
-      class="container-fluid bg-black d-flex gap-5 flex-row justify-content-center h-100"
+      class="container-fluid d-flex flex-column gap-5 justify-content-center"
     >
-      <div class="row d-flex gap-3 justify-content-evenly align-items-center">
+      <div
+        class="row gap-5 d-flex justify-content-center align-items-center mt-4"
+      >
         <div class="card" style="width: 18rem">
           <img
             src="./Fotos/cardigan_largo_rayas.png"
@@ -153,7 +137,7 @@
             <a href="#" class="btn btn-primary comprar">Comprar</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18.15rem">
           <img src="./Fotos/mono_overol.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Mono Overol</h5>
@@ -169,9 +153,29 @@
             <a href="#" class="btn btn-primary comprar">Comprar</a>
           </div>
         </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./Fotos/cardigan_largo_rayas.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cardigan Largo Rayas</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item precio">25€</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="btn btn-primary comprar">Comprar</a>
+          </div>
+        </div>
       </div>
 
-      <div class="row d-flex gap-3 justify-content-evenly align-items-center">
+      <div class="row gap-5 d-flex justify-content-center align-items-center">
         <div class="card" style="width: 18rem">
           <img src="./Fotos/falda_print.png" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -223,6 +227,26 @@
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item precio">40€</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="btn btn-primary comprar">Comprar</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./Fotos/cardigan_largo_rayas.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cardigan Largo Rayas</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item precio">25€</li>
           </ul>
           <div class="card-body">
             <a href="#" class="btn btn-primary comprar">Comprar</a>
