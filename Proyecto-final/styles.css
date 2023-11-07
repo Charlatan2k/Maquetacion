@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container-pr {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c2d5f;
+  height: 100%;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-bottom: 2px solid white;
+  width: 24vw;
+  margin-bottom: 20px;
+}
+
+.sector-md {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  border: 2px solid #43c1ff;
+  border-radius: 20px;
+  background-color: #ecf9ff;
+  width: 25vw;
+  height: 50vh;
+  transition: background-color ease-in-out 0.4s;
+}
+
+.sector-md a {
+  background-color: #18a0ff;
+}
+
+.sector-md a:hover {
+  background-color: #007fff;
+}
+
+.sector-md a:active {
+  background-color: #0066fb;
+}
+
+/* ?CSS de cartas */
+
+.cnt-pr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c2d5f;
+  width: 100%;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 40px;
+  color: white;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  border: 2px solid #ecf9ff;
+  border-radius: 5px;
+  background-color: #007fff;
+  color: white;
+  text-decoration: none;
+}
+
+#titulo-peli {
+  font-size: 24px;
+  width: auto;
+  color: white;
+}
+
+#movie-container {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* ?CSS de profesionales */
+
+.cnt-pr2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c2d5f;
+  width: 100%;
+  height: 100%;
+}
+
+#back-btn-profesional {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+#professional-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
